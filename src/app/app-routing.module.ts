@@ -7,6 +7,12 @@ const routes: Routes = [
   {
     path: '',
     children: [
+      {
+        path: 'lazy',
+        loadChildren: () =>
+          import('./lazy/lazy.module').then((m) => m.LazyModule),
+        // loadChildren: './lazy/lazy.module#LazyModule',
+      },
       { path: 'home', component: HomeComponent },
       { path: '**', redirectTo: '/home', pathMatch: 'full' },
     ],
