@@ -1,0 +1,14 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "node server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js /"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.6"
+  }
+}
